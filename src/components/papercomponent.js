@@ -2,6 +2,7 @@ import React from "react";
 
 import { Paper, Box, Grid, Typography } from "@material-ui/core";
 import CountUp from "react-countup";
+import "./papercomponent.css";
 
 export default function PaperComponent(props) {
   return (
