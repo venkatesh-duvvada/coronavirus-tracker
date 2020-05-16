@@ -8,7 +8,9 @@ export default function PaperComponent(props) {
     <Box align="center" justify="center" p={1} m={1}>
       <Paper elevation={5}>
         <Box p={1} m={1}>
-          <Typography variant="h4">{props.data.name}</Typography>
+          <Typography variant="h4" className="heading-component">
+            {props.data.name}
+          </Typography>
           <Box>
             <Typography>Confirmed</Typography>
             <Typography variant="h5">
@@ -40,6 +42,21 @@ export default function PaperComponent(props) {
                 duration={2.5}
                 separator=","
               />
+              <Box>
+                <Typography>Active</Typography>
+                <Typography variant="h5">
+                  <CountUp
+                    start={0}
+                    end={
+                      props.data.confirmedValue -
+                      props.data.deathsValue -
+                      props.data.recoveredValue
+                    }
+                    duration={2.5}
+                    separator=","
+                  />
+                </Typography>
+              </Box>
             </Typography>
             <Box>
               <Typography>
