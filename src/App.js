@@ -27,9 +27,6 @@ export default function App() {
     fetchIndiaDataNew();
   }, []);
 
-  console.log(india);
-  console.log(world);
-
   if (!(world.confirmedValue && india.confirmedValue))
     return (
       <Box align="center" justify="center">

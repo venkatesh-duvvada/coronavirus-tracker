@@ -4,7 +4,6 @@ import { Paper, Box, Grid, Typography } from "@material-ui/core";
 import CountUp from "react-countup";
 
 export default function PaperComponent(props) {
-  console.log(props);
   return (
     <Box align="center" justify="center" p={1} m={1}>
       <Paper elevation={5}>

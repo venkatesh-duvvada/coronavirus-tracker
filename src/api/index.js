@@ -16,7 +16,7 @@ export const fetchWorldData = async () => {
       deathsValue: deaths.value,
 
       recoveredValue: recovered.value,
-      lastUpdatedTime: lastUpdate.date.toUTCString(),
+      lastUpdatedTime: new Date(lastUpdate).toUTCString(),
     };
 
     return modifiedWorldData;
@@ -37,7 +37,7 @@ export const fetchIndiaData = async () => {
       deathsValue: deaths.value,
 
       recoveredValue: recovered.value,
-      lastUpdatedTime: lastUpdate,
+      lastUpdatedTime: new Date(lastUpdate).toUTCString(),
     };
 
     return modifiedIndiaData;
