@@ -8,8 +8,8 @@ export default function PaperComponent(props) {
   return (
     <Box align="center" justify="center" p={1} m={1}>
       <Paper elevation={5}>
-        <Box p={1} m={1}>
-          <Typography variant="h4" className="heading-component">
+        <Box p={1} m={1} className="heading-component">
+          <Typography variant="h4" >
             {props.data.name}
           </Typography>
           <Box>
