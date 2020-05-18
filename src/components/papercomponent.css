@@ -1,3 +1,66 @@
 .heading-component {
-  color: #beef00;
+  color: azure;
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+.heading-confirmed {
+  padding-top: 0.5rem;
+  color: azure;
+  font-size: 1rem;
+}
+
+.heading-confirmed-value {
+  color: #ccff99;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.heading-deaths {
+  padding-top: 0.5rem;
+  color: azure;
+  font-size: 1rem;
+}
+
+.heading-deaths-value {
+  color: #ccff99;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.heading-active {
+  padding-top: 0.5rem;
+  color: azure;
+  font-size: 1rem;
+}
+
+.heading-active-value {
+  color: #ccff99;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.heading-recovered {
+  padding-top: 0.5rem;
+  color: azure;
+  font-size: 1rem;
+}
+
+.heading-recovered-value {
+  color: #ccff99;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.last-updated {
+  padding: 1rem;
+  color: #739900;
+}
+
+.paper-component {
+  margin: 0rem;
+  padding: 0rem;
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(to right, #c33764, #1d2671);
 }

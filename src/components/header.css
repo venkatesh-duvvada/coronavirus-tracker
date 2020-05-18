@@ -1,0 +1,9 @@
+.app-bar {
+  background: linear-gradient(to right, #c33764, #1d2671);
+}
+.heading {
+  color: linear-gradient(to right, #c33764, #ffffff);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2rem;
+}

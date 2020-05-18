@@ -1,42 +1,41 @@
 import React from "react";
 
-import { Paper, Box, Grid, Typography } from "@material-ui/core";
+import { Paper, Box } from "@material-ui/core";
 import CountUp from "react-countup";
 import "./papercomponent.css";
 
 export default function PaperComponent(props) {
   return (
-    <Box align="center" justify="center" p={1} m={1}>
+    <Box p={1} m={1}>
       <Paper elevation={5}>
-        <Box p={1} m={1} className="heading-component">
-          <Typography variant="h4" >
-            {props.data.name}
-          </Typography>
+        <Box className="paper-component">
+          <Box className="heading-component"> {props.data.name}</Box>
+
           <Box>
-            <Typography>Confirmed</Typography>
-            <Typography variant="h5">
+            <Box className="heading-confirmed">Confirmed</Box>
+            <Box className="heading-confirmed-value">
               <CountUp
                 start={0}
                 end={props.data.confirmedValue}
                 duration={2.5}
                 separator=","
               />
-            </Typography>
+            </Box>
           </Box>
           <Box>
-            <Typography>Deaths</Typography>
-            <Typography variant="h5">
+            <Box className="heading-deaths">Deaths</Box>
+            <Box className="heading-deaths-value">
               <CountUp
                 start={0}
                 end={props.data.deathsValue}
                 duration={2.5}
                 separator=","
               />
-            </Typography>
+            </Box>
           </Box>
           <Box>
-            <Typography>Recovered</Typography>
-            <Typography variant="h5">
+            <Box className="heading-recovered">Recovered</Box>
+            <Box className="heading-recovered-value">
               <CountUp
                 start={0}
                 end={props.data.recoveredValue}
@@ -44,8 +43,8 @@ export default function PaperComponent(props) {
                 separator=","
               />
               <Box>
-                <Typography>Active</Typography>
-                <Typography variant="h5">
+                <Box className="heading-active">Active</Box>
+                <Box className="heading-active-value">
                   <CountUp
                     start={0}
                     end={
@@ -56,13 +55,11 @@ export default function PaperComponent(props) {
                     duration={2.5}
                     separator=","
                   />
-                </Typography>
+                </Box>
               </Box>
-            </Typography>
-            <Box>
-              <Typography>
-                Last Updated : {props.data.lastUpdatedTime}
-              </Typography>
+            </Box>
+            <Box className="last-updated">
+              Last Updated : {props.data.lastUpdatedTime}
             </Box>
           </Box>
         </Box>

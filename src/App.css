@@ -1,3 +1,13 @@
 .App {
   font-family: "Roboto";
+  background: linear-gradient(to right, #c33764, #1d2671);
+  height: 100%;
+  margin: 0rem;
+  padding: 0rem;
+  background-repeat: repeat;
+}
+
+.loading {
+  font-size: 2rem;
+  color: azure;
 }
